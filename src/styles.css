@@ -11,7 +11,7 @@
 }
 
 :root {
-  --color-bg: #1f1f38;
+  --color-bg: #0c0c30;
   --color-bg-variant: #2c2c6c;
   --color-primary: #4db5ff;
   --color-primary-variant: rgba(77, 181, 255, 0.4);
@@ -54,7 +54,7 @@ h5 {
 }
 
 h1 {
-  font-size: 8rem;
+  font-size: 4rem;
 }
 
 section {
@@ -118,5 +118,19 @@ a:hover {
 @media screen and (max-width: 1024px) {
   .container {
     width: var(--container-width-md);
+  }
+  section {
+    margin-top: 6rem;
+  }
+}
+
+/* Media Queries (Small Devise) */
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+  section > h2 {
+    margin-bottom: 2rem;
   }
 }
