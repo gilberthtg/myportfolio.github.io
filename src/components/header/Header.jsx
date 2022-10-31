@@ -1,6 +1,7 @@
 import React from "react";
 import "./header.css";
 import CTA from "./CTA";
+import HeaderSocial from "./HeaderSocial";
 import ME from "../../asset/tipografi.png";
 
 const Header = () => {
@@ -11,15 +12,24 @@ const Header = () => {
         <h1>Gilbert Hutagalung</h1>
         <h5 className="text-alight">Novice Developer</h5>
         <CTA />
+        <HeaderSocial />
 
         <div className="me">
-          <img src={ME} alt="Gilbert Hutagalung" />
+          <img
+            className="profil"
+            src={ME}
+            alt="Gilbert Hutagalung"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          />
         </div>
 
-        <a href="#contact" className="scroll_down">
+        <a href="#about" className="scroll_down">
           Scroll Down
         </a>
       </div>
+      <div className="space"></div>
     </header>
   );
 };
